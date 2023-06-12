@@ -152,7 +152,7 @@ plugins=(
     python
     sublime
     zsh-syntax-highlighting
-    zsh-autosuggestions
+    # zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -175,7 +175,7 @@ export LANG=en_US.UTF-8
 # fi
 
 # Compilation flags
-export ARCHFLAGS="arm64"
+# export ARCHFLAGS="arm64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id.pub"
