@@ -152,7 +152,7 @@ plugins=(
     python
     sublime
     zsh-syntax-highlighting
-    # zsh-autosuggestions
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -174,6 +174,11 @@ export LANG=en_US.UTF-8
 #   export EDITOR='mvim'
 # fi
 
+# Separate aliases/functions file
+source $HOME/.aliases
+source $HOME/.functions
+
+
 # Compilation flags
 # export ARCHFLAGS="arm64"
 
@@ -190,3 +195,6 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 pyenv virtualenvwrapper_lazy
 SYSTEM_VERSION_COMPAT=1
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+

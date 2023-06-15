@@ -18,9 +18,5 @@ eval "$(pyenv init --path)"
 export PATH=$PYENV_ROOT/bin:$SUBLIME_PATH:$OPEN_SSL_PATH:$USER_BIN_PATH:$POSTGRES_PATH:$HOME:$BZIP2_PATH:$HOMEBREW_PATH:$PYENV_ROOT:$PATH:.
 export GPG_TTY=$(tty)
 
-# Separate aliases file
-source $HOME/.aliases
-source $HOME/.functions
-
 # Get a fortune
 fortune
