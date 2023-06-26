@@ -1,3 +1,38 @@
+#------#
+# PATH #
+#------#
+export SUBLIME_PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
+export USER_BIN_PATH="$HOME/bin"
+export POSTGRES_PATH="/Applications/Postgres.app/Contents/Versions/latest/bin"
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export HOMEBREW_PATH="/opt/homebrew/bin"
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export BZIP2_PATH="/opt/homebrew/opt/bzip2/bin"
+export OPEN_SSL_PATH="/opt/homebrew/opt/openssl@3/bin"
+
+export PATH=$HOMEBREW_PATH:$SUBLIME_PATH:$OPEN_SSL_PATH:$USER_BIN_PATH:$POSTGRES_PATH:$HOME:$BZIP2_PATH:$PATH:.
+
+#-------#
+# PyEnv #
+#-------#
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+export GPG_TTY=$(tty)
+
+#-------------------#
+# Shell integration #
+#-------------------#
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
 #-----#
 # NVM #
 #-----#
@@ -189,12 +224,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id.pub"
 export AWS_VAULT_BACKEND=keychain
 export AWS_VAULT_KEYCHAIN_NAME=aws-vault
 
-# PyEnv
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-pyenv virtualenvwrapper_lazy
-SYSTEM_VERSION_COMPAT=1
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
-
+# Get a fortune
+fortune
