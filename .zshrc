@@ -4,12 +4,12 @@
 export SUBLIME_PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 export USER_BIN_PATH="$HOME/bin"
 export POSTGRES_PATH="/Applications/Postgres.app/Contents/Versions/latest/bin"
-export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
-export HOMEBREW_PREFIX="/opt/homebrew";
-export HOMEBREW_REPOSITORY="/opt/homebrew";
-export HOMEBREW_PATH="/opt/homebrew/bin"
-export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
-export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
+export HOMEBREW_PREFIX="/opt/homebrew"
+export HOMEBREW_REPOSITORY="/opt/homebrew"
+export HOMEBREW_PATH="/opt/homebrew/bin:/opt/homebrew/sbin"
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:"
 export BZIP2_PATH="/opt/homebrew/opt/bzip2/bin"
 export OPEN_SSL_PATH="/opt/homebrew/opt/openssl@3/bin"
 
