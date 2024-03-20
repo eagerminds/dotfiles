@@ -1,7 +1,7 @@
 [user]
 	name = Alex Zagoro
 	email = alex@eagerminds.co
-	signingkey = 8E285DF58ED82475
+	signingkey = 4B1BD6FF
 [color]
     ui = true
 [core]
@@ -34,6 +34,6 @@
 [submodule] 
 	recurse = true
 [gpg]
-	program = /usr/local/bin/gpg
+	program = /opt/homebrew/bin/gpg
 [tag]
 	forceSignAnnotated = true

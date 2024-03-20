@@ -180,6 +180,7 @@ plugins=(
     macos
     npm
     nvm
+    pre-commit
     pip
     pipenv
     poetry
@@ -226,3 +227,14 @@ export AWS_VAULT_KEYCHAIN_NAME=aws-vault
 
 # Get a fortune
 fortune
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/striveforbest/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/striveforbest/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/striveforbest/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/striveforbest/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# PDM
+export PDM_VENV_PROMPT='{project_name}-py{python_version}'
+
