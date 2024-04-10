@@ -12,8 +12,8 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:"
 export BZIP2_PATH="/opt/homebrew/opt/bzip2/bin"
 export OPEN_SSL_PATH="/opt/homebrew/opt/openssl@3/bin"
-
-export PATH=$HOMEBREW_PATH:$SUBLIME_PATH:$OPEN_SSL_PATH:$USER_BIN_PATH:$POSTGRES_PATH:$HOME:$BZIP2_PATH:$PATH:.
+export GRAPHVIZ_DIR="/opt/homebrew/opt/graphviz"
+export PATH=$HOMEBREW_PATH:$SUBLIME_PATH:$OPEN_SSL_PATH:$GRAPHVIZ_DIR:$USER_BIN_PATH:$POSTGRES_PATH:$HOME:$BZIP2_PATH:$PATH:.
 
 #-------#
 # PyEnv #
@@ -51,6 +51,12 @@ export AWS_VAULT_BACKEND=pass
 export LDFLAGS="-L$(brew --prefix openssl)/lib"
 export CPPFLAGS="-I$(brew --prefix openssl)/include"
 export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
+
+#----------#
+# graphviz #
+#----------#
+export LDFLAGS="${LDFLAGS} -L$(brew --prefix graphviz)/lib"
+export CFLAGS="${CPPFLAGS} -I$(brew --prefix graphviz)/include"
 
 #------#
 # zlib #

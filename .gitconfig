@@ -5,7 +5,7 @@
 [color]
     ui = true
 [core]
-	excludesfile = /Users/striveforbest/.gitignore_global
+	excludesfile = /Users/alex.zagoro/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -34,6 +34,6 @@
 [submodule] 
 	recurse = true
 [gpg]
-	program = /opt/homebrew/bin/gpg
+	program = /usr/local/bin/gpg
 [tag]
 	forceSignAnnotated = true

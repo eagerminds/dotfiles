@@ -51,6 +51,10 @@ alias pytest='pytest --verbosity=3 --pdb --pdbcls=IPython.terminal.debugger:Pdb 
 alias prun='pipenv run'
 alias prunm='pipenv run python manage.py'
 
+#pdm
+alias pr='pdm run'
+alias pm='pdm run python manage.py'
+
 # django management commands aliases
 alias collectstatic='python manage.py collectstatic --noinput'
 alias compress='python manage.py compress'
